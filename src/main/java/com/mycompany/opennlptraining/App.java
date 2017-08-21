@@ -18,8 +18,13 @@ public class App {
 //         NERTrainingExample NTE=new NERTrainingExample();
 //         NTE.TrainNERModel();
 
-            DocClassificationMaxentTrainer doc=new DocClassificationMaxentTrainer();
-            doc.docClassify();
+//            DocClassificationMaxentTrainer doc=new DocClassificationMaxentTrainer();
+//            doc.docClassify();
+
+
+            DiseaseFinder customEntity=new DiseaseFinder();
+            customEntity.train("disease");
+
     }
     
 }
