@@ -13,8 +13,13 @@ import java.io.IOException;
  */
 public class App {
     public static void main(String args[]) throws IOException{
-       SentenceDetectorTrainingExample SDT=new SentenceDetectorTrainingExample();
-       SDT.TrainSentDetectorModel();
+//       SentenceDetectorTrainingExample SDT=new SentenceDetectorTrainingExample();
+//       SDT.TrainSentDetectorModel();
+//         NERTrainingExample NTE=new NERTrainingExample();
+//         NTE.TrainNERModel();
+
+            DocClassificationMaxentTrainer doc=new DocClassificationMaxentTrainer();
+            doc.docClassify();
     }
     
 }
