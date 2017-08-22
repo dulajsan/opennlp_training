@@ -1,2 +1,36 @@
-checkbox click the abc checkbox
-field click the field
+If you want to select the <START:checkbox> Delay Cost of Goods Sold at Delivery Confirmation <END> check box, the <START:checkbox> Delay Cost of Goods Sold at Delivery Confirmation <END> check box on the Company/Distribution/Order tab must have been selected.
+The <START:checkbox> Template Customer <END> check box should be selected for those customers that are to be used as templates on the Customer/Order/General tab.
+The <START:checkbox> Quick Registered Customer <END> check box in Customer/Order/General and Customers for this customer will automatically be selected.
+if the user selects Yes, regardless of the setting on the <START:checkbox> Default Info <END> check box. If the user selects No, only lines with the <START:checkbox> Default Info <END> check box selected, will be updated with the delivery address of the header
+If the <START:checkbox> Confirm Deliveries <END> check box is selected, all order lines require delivery confirmation.
+If both the <START:checkbox> Confirm Deliveries <END> and <START:checkbox> Delay Cost of Sold Goods to Delivery Confirmation <END> check boxes are selected, the cost of goods sold will be posted at delivery confirmation. 
+If the <START:checkbox> Check Sales Group Setting <END> check box is selected, only parts with a sales group that has either Not Allowed or Optional status will be added to the order.
+If both the <START:checkbox> Confirm Deliveries <END> and <START:checkbox> Check Sales Group Setting <END> check boxes are selected, only parts with a sales group that has either Required or Optional status will be added to the order.
+If your customer is Jinsui enabled the <START:checkbox> Jinsui Invoice <END> check box on the Customer Order/Misc Order Info tab will become automatically selected upon saving the customer order header record.
+The Selected check box is selected on the chosen alternatives
+Invoice price and tax calculations are controlled by the <START:checkbox> Use Price Incl Tax <END> check box. The default value of the check box is fetched from the customer order, shipment or return material authorization. The value can not be changed.
+If the <START:checkbox> Transaction Level <END> check box is selected in the Company/Tax Control/General tab under Tax Code Validations for Customer Tax, it is mandatory to enter a tax code on the invoice line.
+It is only possible to modify invoice lines which have their <START:checkbox> Preliminary Update Allowed <END> check box selected. 
+If single tax code is used, the <START:checkbox> Multiple Tax Lines <END> check box is not selected and single tax code is displayed in the Tax Code column on the invoice line.
+If multiple taxes are used <START:checkbox> Multiple Tax Lines <END> check box is selected on the invoice line.
+If you cleared the <START:checkbox> Show credit lines for Correction Invoice <END> check box, only the debit lines of the customer invoice will be visible.
+Clear the <START:checkbox> Show credit lines for Correction Invoice <END> check box to make the credit lines on the customer invoice invisible. 
+When a customer order line is entered and the price is retrieved from a customer agreement, the <START:checkbox> Provisional Price <END> check box value is also inherited from the customer agreement.
+If this check box is selected, the price on the customer order line is temporary and will be updated later.
+You cannot create invoices for the customer order lines that have the <START:checkbox> Provisional Price <END> check box selected.
+You must also note, you cannot select both the <START:checkbox> Price Freeze <END> check box and the Provisional Price check box at the same time.
+When making changes to the order line, you must note that the <START:checkbox> Provisional Price <END> check box can be selected only if the line is not invoiced partially or completely.
+The <START:checkbox>  Update Price Effective Date Automatically <END> check box is selected as well.
+When values in a customer order line have been changed and the changes need to be replicated to the DOP header, the Replicate Changes dialog box will be opened. However, the <START:checkbox> Send Change Request <END> check box will have no effect and even if it is selected, it will not apply to DOP.
+If you want to use multiple units of measure (UoM) when entering the quantities of the sales part, the inventory part must have been connected to an input UoM group, and the <START:checkbox> Sales Usage Allowed <END> check box on one or more of the input UoMs (belonging to that input UoM group) must have been selected.
+The <START:checkbox> Availability Check <END> check box must be selected for the part on the Inventory Part/Misc Part Info tab.
+If the <START:checkbox> Provisional Price <END> check box is selected, it will not be possible to invoice the order line. 
+If the customer has the <START:checkbox> Receive Pack Size Charge/Discount <END> check box selected in the Customer/Order/General tab, the order header site has a valid pack size charge price list and the order line(s) has an Input UoM specified in that part list, then a charge line will be created in the Customer Order/Charges tab. The <START:checkbox> Charge Category <END> check box in the charge line indicates that it is a pack size charge.
+Note: If the <START:checkbox> Input UoM Group <END> check box on the line is selected, then it is possible for you to enter quantities of the sales part in input units and not the sales unit of measure. 
+You can manually change the sales price both in the customer currency as well as in your own base currency.
+If you select the <START:checkbox> Use Price Incl Tax <END> check box, it is also possible to change the sales price including tax directly.
+The system will calculate the net sales price automatically from the connected tax codes if the <START:checkbox> Taxable <END> check box is selected and the tax liability is of type taxable.
+To block an order line from being invoiced, select the <START:checkbox> Invoice Blocked <END> check box.
+To be able to create a Jinsui invoice, select the <START:checkbox> Jinsui Invoice <END> check box.
+To make the price on the order line temporary, select the <START:checkbox> Provisional Price <END> check box.
+To make the customer order line, free of charge select the <START:checkbox> Free of Charge <END> check box.  
